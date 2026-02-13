@@ -8,6 +8,9 @@ piece={
 }
 import numpy as np
 def decode_FEN(pos):
+    """ FEN is a standard notation to represent chess board position
+    :param FEN: Standard FEN notation as a str
+    """
     # Split the FEN string into its components
     game=pos.split(' ')[0]
     info=pos.split(' ')[1:]
