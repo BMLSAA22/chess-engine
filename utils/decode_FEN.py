@@ -52,5 +52,6 @@ def FEN_to_arr(game):
                 if arr[i][j].islower():tensor[piece[arr[i][j]]][i][j]=-1
                 else:tensor[piece[arr[i][j].lower()]][i][j]=1
     return tensor , decode_extra_info(info)
-print(FEN_to_arr("rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"))
+if __name__ == "__main__":
+    print(FEN_to_arr("rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"))
 
